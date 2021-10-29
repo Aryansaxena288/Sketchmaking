@@ -26,7 +26,7 @@ blur_img=cv2.GaussianBlur(invert_img, (31,31),0)
 #cv2.imshow('Blur',blur_img)
 invblur_img=cv2.bitwise_not(blur_img)
 #cv2.imshow('INVBLUR',invblur_img)
-sketch_img=cv2.divide(grey_img,invblur_img, scale=200.0)
+sketch_img=cv2.divide(grey_img,invblur_img, scale=180.0)
 cv2.imshow('Sketch',sketch_img)
 
 width = 400
